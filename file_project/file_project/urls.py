@@ -23,4 +23,6 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('file/', include("file_upload.urls")),
+    path('ajaxfilesupload/', include("ajaxfilesupload.urls")),
+    path('ajaxdirupload/', include("ajaxdirupload.urls")),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
